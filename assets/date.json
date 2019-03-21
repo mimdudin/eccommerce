@@ -1,0 +1,866 @@
+[
+    {
+        "id": 1,
+        "dayAvailable": [
+            {
+                "month": "January",
+                "day": "Mon",
+                "dayNumber": "1"
+            },
+            {
+                "month": "January",
+                "day": "Tue",
+                "dayNumber": "2"
+            },
+            {
+                "month": "January",
+                "day": "Sat",
+                "dayNumber": "6"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "January",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "January",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "January",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "January",
+                "day": "Tue",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "January",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "January",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "January"
+    },
+    {
+        "id": 2,
+        "dayAvailable": [
+            {
+                "month": "February",
+                "day": "Mon",
+                "dayNumber": "1"
+            },
+            {
+                "month": "February",
+                "day": "Tue",
+                "dayNumber": "2"
+            },
+            {
+                "month": "February",
+                "day": "Sat",
+                "dayNumber": "6"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "February",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "February",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "February",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "February",
+                "day": "Tue",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "February",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "February",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "February"
+    },
+    {
+        "id": 3,
+        "dayAvailable": [
+            {
+                "month": "March",
+                "day": "Mon",
+                "dayNumber": "1"
+            },
+            {
+                "month": "March",
+                "day": "Tue",
+                "dayNumber": "5"
+            },
+            {
+                "month": "March",
+                "day": "Sat",
+                "dayNumber": "7"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "March",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "March",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "March",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "March",
+                "day": "Tue",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "March",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "March",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "March"
+    },
+    {
+        "id": 4,
+        "dayAvailable": [
+            {
+                "month": "April",
+                "day": "Mon",
+                "dayNumber": "2"
+            },
+            {
+                "month": "April",
+                "day": "Tue",
+                "dayNumber": "3"
+            },
+            {
+                "month": "April",
+                "day": "Sat",
+                "dayNumber": "6"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "April",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "April",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "April",
+                "day": "Tue",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "April",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "April",
+                "day": "Sat",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "April",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "April"
+    },
+    {
+        "id": 5,
+        "dayAvailable": [
+            {
+                "month": "May",
+                "day": "Mon",
+                "dayNumber": "4"
+            },
+            {
+                "month": "May",
+                "day": "Tue",
+                "dayNumber": "5"
+            },
+            {
+                "month": "May",
+                "day": "Sat",
+                "dayNumber": "6"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "May",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "May",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "May",
+                "day": "Tue",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "May",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "May",
+                "day": "Sat",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "May",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "May"
+    },
+    {
+        "id": 6,
+        "dayAvailable": [
+            {
+                "month": "June",
+                "day": "Mon",
+                "dayNumber": "1"
+            },
+            {
+                "month": "June",
+                "day": "Tue",
+                "dayNumber": "6"
+            },
+            {
+                "month": "June",
+                "day": "Sat",
+                "dayNumber": "7"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "June",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "June",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "June",
+                "day": "Tue",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "June",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "June",
+                "day": "Sat",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "June",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "June"
+    },
+    {
+        "id": 7,
+        "dayAvailable": [
+            {
+                "month": "July",
+                "day": "Mon",
+                "dayNumber": "5"
+            },
+            {
+                "month": "July",
+                "day": "Tue",
+                "dayNumber": "6"
+            },
+            {
+                "month": "July",
+                "day": "Sat",
+                "dayNumber": "7"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "July",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "July",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "July",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "July",
+                "day": "Tue",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "July",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "July",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": true
+            }
+        ],
+        "month": "July"
+    },
+    {
+        "id": 8,
+        "dayAvailable": [
+            {
+                "month": "August",
+                "day": "Mon",
+                "dayNumber": "4"
+            },
+            {
+                "month": "August",
+                "day": "Tue",
+                "dayNumber": "6"
+            },
+            {
+                "month": "August",
+                "day": "Sat",
+                "dayNumber": "7"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "August",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "August",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "August",
+                "day": "Tue",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "August",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "August",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "August",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "August"
+    },
+    {
+        "id": 9,
+        "dayAvailable": [
+            {
+                "month": "September",
+                "day": "Mon",
+                "dayNumber": "1"
+            },
+            {
+                "month": "September",
+                "day": "Tue",
+                "dayNumber": "2"
+            },
+            {
+                "month": "September",
+                "day": "Sat",
+                "dayNumber": "5"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "September",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "September",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "September",
+                "day": "Tue",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "September",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "September",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "September",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "September"
+    },
+    {
+        "id": 10,
+        "dayAvailable": [
+            {
+                "month": "October",
+                "day": "Mon",
+                "dayNumber": "4"
+            },
+            {
+                "month": "October",
+                "day": "Tue",
+                "dayNumber": "5"
+            },
+            {
+                "month": "October",
+                "day": "Sat",
+                "dayNumber": "7"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "October",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "October",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "October",
+                "day": "Tue",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "October",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "October",
+                "day": "Sat",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "October",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "October"
+    },
+    {
+        "id": 11,
+        "dayAvailable": [
+            {
+                "month": "November",
+                "day": "Mon",
+                "dayNumber": "2"
+            },
+            {
+                "month": "November",
+                "day": "Tue",
+                "dayNumber": "4"
+            },
+            {
+                "month": "November",
+                "day": "Sat",
+                "dayNumber": "6"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "November",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "November",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "November",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "November",
+                "day": "Tue",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "November",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "November",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "November"
+    },
+    {
+        "id": 12,
+        "dayAvailable": [
+            {
+                "month": "Desember",
+                "day": "Mon",
+                "dayNumber": "3"
+            },
+            {
+                "month": "Desember",
+                "day": "Tue",
+                "dayNumber": "4"
+            },
+            {
+                "month": "Desember",
+                "day": "Sat",
+                "dayNumber": "7"
+            },
+            {
+                "month": "Default",
+                "day": "Mon",
+                "dayNumber": "1"
+            },
+            {
+                "month": "Default",
+                "day": "Tue",
+                "dayNumber": "2"
+            },
+            {
+                "month": "Default",
+                "day": "Wed",
+                "dayNumber": "3"
+            },
+            {
+                "month": "Default",
+                "day": "Thu",
+                "dayNumber": "4"
+            },
+            {
+                "month": "Default",
+                "day": "Fri",
+                "dayNumber": "5"
+            },
+            {
+                "month": "Default",
+                "day": "Sat",
+                "dayNumber": "6"
+            },
+            {
+                "month": "Default",
+                "day": "Sun",
+                "dayNumber": "7"
+            }
+        ],
+        "timeAvailable": [
+            {
+                "month": "Desember",
+                "day": "Mon",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "Desember",
+                "day": "Mon",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "Desember",
+                "day": "Tue",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "Desember",
+                "day": "Tue",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "Desember",
+                "day": "Sat",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "Desember",
+                "day": "Sat",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "7:00 AM",
+                "timeEnd": "8:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "8:00 AM",
+                "timeEnd": "9:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "9:00 AM",
+                "timeEnd": "10:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "10:00 AM",
+                "timeEnd": "11:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "11:00 AM",
+                "timeEnd": "12:00 AM",
+                "isFullSlot": false
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "12:00 AM",
+                "timeEnd": "13:00 AM",
+                "isFullSlot": true
+            },
+            {
+                "month": "Default",
+                "day": "Default",
+                "timeStart": "13:00 AM",
+                "timeEnd": "14:00 AM",
+                "isFullSlot": false
+            }
+        ],
+        "month": "Desember"
+    }
+]

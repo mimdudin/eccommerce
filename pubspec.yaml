@@ -49,6 +49,8 @@ flutter:
    - assets/images/milk.png
    - assets/images/snack.png
    - assets/images/vegetable.png
+   - assets/date.json
+
 
   #  - images/a_dot_ham.jpeg
 
