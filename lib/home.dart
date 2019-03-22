@@ -24,6 +24,19 @@ class _HomeState extends State<Home> {
   String _month;
   String _day;
 
+//this goes in our State class as a global variable
+  bool isChecked = false;
+  String _cbValue;
+
+  List _tankSize = [
+    "2000 AND BELOW",
+    "2000 - 3000 (+BHD5.000)",
+    "3000 - 4000 (+BHD10.000)"
+  ];
+
+  List<DropdownMenuItem<String>> _dropDownMenuItems;
+  String _currentSelect;
+
   @override
   void initState() {
     super.initState();
@@ -104,10 +117,30 @@ class _HomeState extends State<Home> {
     loadData();
     _month = "Default";
     _day = "Default";
+
+    _dropDownMenuItems = getDropDownMenuItems();
+// _currentSelect = _dropDownMenuItems[0].value;
   }
 
   Future loadData() async {
     await widget.model.loadDate();
+  }
+
+  List<DropdownMenuItem<String>> getDropDownMenuItems() {
+    List<DropdownMenuItem<String>> items = new List();
+    for (String tank in _tankSize) {
+      items.add(new DropdownMenuItem(
+          value: tank,
+          child: Container(
+              width: 200, child: Text(tank, textAlign: TextAlign.center))));
+    }
+    return items;
+  }
+
+  void changedDropDownItem(String selectedTankSize) {
+    setState(() {
+      _currentSelect = selectedTankSize;
+    });
   }
 
   @override
@@ -202,6 +235,48 @@ class _HomeState extends State<Home> {
                               letterSpacing: -0.5)),
                       SizedBox(height: 3),
                       Container(
+                        margin: EdgeInsets.symmetric(horizontal: 10),
+                        child: DropdownButton(
+                          hint: Text("Please, select one:"),
+                          value: _currentSelect,
+                          items: _dropDownMenuItems,
+                          onChanged: changedDropDownItem,
+                        ),
+                      ),
+                      SizedBox(height: 5),
+
+                      //this goes in as one of the children in our column
+                      //after or before our switch widget. (I used it after)
+                      Container(
+                        alignment: Alignment.centerLeft,
+                        child: Row(
+                          children: <Widget>[
+                            Checkbox(
+                              activeColor: Colors.blueGrey,
+                              value: isChecked,
+                              onChanged: (value) {
+                                setState(() {
+                                  isChecked = value;
+                                  if (isChecked) {
+                                    _cbValue = "YES (+BHD6.000)";
+                                  } else {
+                                    _cbValue = null;
+                                  }
+                                  print(isChecked.toString());
+                                });
+                              },
+                            ),
+                            Text("(+BHD6.000)",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .caption
+                                    .copyWith(fontSize: 14))
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 10),
+
+                      Container(
                           padding: EdgeInsets.only(left: 10),
                           child: Text(
                               "Lorem ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet ipsum dolor siamet.",
@@ -273,9 +348,11 @@ class _HomeState extends State<Home> {
   }
 
   Widget _buildBookingSum(DateService model) {
-    return Column(
+    return Container(
+        child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
+        SizedBox(height: 5),
         Text(
           "Booking Options",
           style: Theme.of(context).textTheme.title.copyWith(
@@ -283,69 +360,110 @@ class _HomeState extends State<Home> {
               color: Colors.pink,
               decoration: TextDecoration.underline),
         ),
-        SizedBox(height: 15),
-        Text(
-          "Tank Size",
-          style: Theme.of(context).textTheme.title.copyWith(
-                fontSize: 16,
-                color: Colors.pink,
-              ),
-        ),
-        Text(
-          "2000 - 3000 (+BHD6.000)",
-          style: Theme.of(context).textTheme.subtitle.copyWith(
-                fontSize: 14,
-              ),
-        ),
-        SizedBox(height: 15),
-        Text(
-          "Tank Santizing",
-          style: Theme.of(context).textTheme.title.copyWith(
-                fontSize: 16,
-                color: Colors.pink,
-              ),
-        ),
-        Text(
-          "YES (+BHD6.000)",
-          style: Theme.of(context).textTheme.subtitle.copyWith(
-                fontSize: 14,
-              ),
-        ),
-        SizedBox(height: 30),
-        Text(
-          "Booking Timing",
-          style: Theme.of(context).textTheme.title.copyWith(
-                fontSize: 16,
-                color: Colors.pink,
-              ),
-        ),
-        SizedBox(height: 12),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: model.timeList
-              .where((time) => time.slots > 0)
-              .toList()
-              .map((time) {
-            return model.timeList
-                            .where((time) => time.slots > 0)
-                            .toList()
-                            .length ==
-                        0 ||
-                    model.timeList.where((time) => time.slots > 0).toList() ==
-                        null
-                ? Text("There are booking booking slots selected.",
-                    style: Theme.of(context).textTheme.subtitle.copyWith(
-                          fontSize: 14,
-                        ))
-                : Text(
-                    "${time.timeStart} - ${time.timeEnd} (${time.slots}) slots",
+        _currentSelect == null
+            ? SizedBox()
+            : Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(height: 15),
+                  Text(
+                    "Tank Size",
+                    style: Theme.of(context).textTheme.title.copyWith(
+                          fontSize: 16,
+                          color: Colors.pink,
+                        ),
+                  ),
+                  Text(
+                    _currentSelect,
                     style: Theme.of(context).textTheme.subtitle.copyWith(
                           fontSize: 14,
                         ),
-                  );
-          }).toList(),
-        )
+                  ),
+                ],
+              ),
+
+        _cbValue == null
+            ? SizedBox()
+            : Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(height: 15),
+                  Text(
+                    "Tank Santizing",
+                    style: Theme.of(context).textTheme.title.copyWith(
+                          fontSize: 16,
+                          color: Colors.pink,
+                        ),
+                  ),
+                  Text(
+                    _cbValue,
+                    style: Theme.of(context).textTheme.subtitle.copyWith(
+                          fontSize: 14,
+                        ),
+                  )
+                ],
+              ),
+
+        model.timeList.where((time) => time.slots > 0).toList().length != 0
+            ? Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  SizedBox(height: 15),
+                  Text(
+                    "Booking Timing",
+                    style: Theme.of(context).textTheme.title.copyWith(
+                          fontSize: 16,
+                          color: Colors.pink,
+                        ),
+                  ),
+                  SizedBox(height: 12),
+                  Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: model.timeList
+                          .where((time) => time.slots > 0)
+                          .toList()
+                          .map((time) {
+                        return model.timeList
+                                        .where((time) => time.slots > 0)
+                                        .toList()
+                                        .length ==
+                                    0 ||
+                                model.timeList
+                                        .where((time) => time.slots > 0)
+                                        .toList() ==
+                                    null
+                            ? Text("There are booking booking slots selected.",
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .subtitle
+                                    .copyWith(
+                                      fontSize: 14,
+                                    ))
+                            : Row(
+                                children: <Widget>[
+                                  Text(
+                                    "${time.timeStart} - ${time.timeEnd} (${time.slots}) slots",
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .subtitle
+                                        .copyWith(
+                                          fontSize: 14,
+                                        ),
+                                  ),
+                                  SizedBox(width: 10),
+                                  GestureDetector(
+                                    child: Container(
+                                        padding: EdgeInsets.only(top: 2),
+                                        child: Icon(Icons.close, size: 13)),
+                                    onTap: () => setState(() => time.slots = 0),
+                                  )
+                                ],
+                              );
+                      }).toList())
+                ],
+              )
+            : SizedBox(),
 
         // Text(
         //   "09:22 - 10:55 (2 slots)",
@@ -371,8 +489,9 @@ class _HomeState extends State<Home> {
         //         fontSize: 14,
         //       ),
         // ),
+        SizedBox(height: 20),
       ],
-    );
+    ));
   }
 
   Widget _buildSelectTime(DateService model) {
@@ -875,8 +994,9 @@ class _HomeState extends State<Home> {
   }
 
   Widget _buildTotalPrice(DateService model) {
-    var slots = model.timeList != null && model.timeList.length != 0 ?
-        model.timeList.map((time) => time.slots).reduce((a, b) => a + b) : 0;
+    var slots = model.timeList != null && model.timeList.length != 0
+        ? model.timeList.map((time) => time.slots).reduce((a, b) => a + b)
+        : 0;
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
